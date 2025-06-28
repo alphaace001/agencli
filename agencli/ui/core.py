@@ -2,20 +2,7 @@ from rich.console import Console
 from rich.padding import Padding
 
 from agencli.constants import APP_VERSION
-
-
-class Colors:
-    """Define color styles for the console output."""
-
-    primary = "medium_purple1"
-    secondary = "medium_purple3"
-    muted = "grey62"
-    error = "red"
-    success = "bold green"
-
-
-colors = Colors()
-
+from agencli.ui.panels import colors
 
 console = Console()
 

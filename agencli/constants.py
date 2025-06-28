@@ -1,2 +1,46 @@
 APP_NAME = "agencli"
 APP_VERSION = "0.1.0"
+
+DEFAULT_USER_CONFIG = {
+    "default_model": "",
+    "env": {
+        "ANTHROPIC_API_KEY": "your-anthropic-api-key",
+        "OPENAI_API_KEY": "your-openai-api-key",
+        "GEMINI_API_KEY": "your-gemini-api-key",
+    },
+    "mcpServers": {},
+    "settings": {
+        "allowed_tools": [],
+        "allowed_commands": [
+            "ls",
+            "cat",
+            "grep",
+            "rg",
+            "find",
+            "pwd",
+            "echo",
+            "which",
+            "head",
+            "tail",
+            "wc",
+            "sort",
+            "uniq",
+            "diff",
+            "tree",
+            "file",
+            "stat",
+            "du",
+            "df",
+            "ps",
+            "top",
+            "env",
+            "date",
+            "whoami",
+            "hostname",
+            "uname",
+            "id",
+            "groups",
+            "history",
+        ],
+    },
+}
