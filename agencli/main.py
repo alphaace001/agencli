@@ -25,6 +25,11 @@ console = Console()
 log = logging.getLogger(__name__)
 
 
+async def repl():
+    ui.info(f"Using model:{session.current_model}")
+    mcp_agent = get_or_create_agent()
+
+
 def setup_and_run_event_loop(coro):
     """Create and run event loop with proper cleanup"""
     loop = asyncio.new_event_loop()

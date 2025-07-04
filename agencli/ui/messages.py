@@ -6,6 +6,13 @@ colors = panels.Colors()
 console = Console()
 
 
+def info(message: str):
+    """Display an information message"""
+    panels._prepare_to_print("status")
+    console.print(f"ℹ {message}", style=colors.primary)
+    panels._last_output = "status"
+
+
 def muted(message: str, spaces: int = 0):
     """Display a muted message."""
     panels._prepare_to_print("status")
